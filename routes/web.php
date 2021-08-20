@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\sendMessageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,3 +18,4 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 Route::view('/', 'index');
+Route::post('/', [sendMessageController::class, 'create'])->name('mail');
