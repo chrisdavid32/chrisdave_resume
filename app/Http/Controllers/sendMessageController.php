@@ -26,7 +26,8 @@ class sendMessageController extends Controller
             Message::create($data);
             return redirect()->route('messages')->with('success', 'Message send successful');
         } catch (\Exception $e) {
-            throw $e->getMessage();
+            //throw $e->getMessage();
+            return redirect()->route('messages')->with('error', 'error sending message');
         }
     }
 }
