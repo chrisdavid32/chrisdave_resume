@@ -20,14 +20,10 @@ class sendMessageController extends Controller
 
     public function store(sendmailRequest $request)
     {
-        try {
-            $data = $request->only(['name', 'email', 'message']);
-            //$pname = $data['name'];
-            Message::create($data);
+        $data = $request->only(['name', 'email', 'message']);
+        $result = Message::create($data);
+        if ($result) {
             return redirect()->route('messages')->with('success', 'Message send successful');
-        } catch (\Exception $e) {
-            throw $e->getMessage();
-            //return redirect()->route('messages')->with('error', 'error sending message');
         }
     }
 }
