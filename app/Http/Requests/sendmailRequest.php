@@ -13,7 +13,7 @@ class sendmailRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,9 @@ class sendmailRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            "name" => "required|string",
+            "email" => "required|email",
+            "message" => "required"
         ];
     }
 }

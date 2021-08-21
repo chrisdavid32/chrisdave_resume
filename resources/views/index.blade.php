@@ -161,28 +161,36 @@
                         </div>
                     </div>
                     <hr class="d-print-none" />
-                    <div class="px-3 pb-4 contant-section px-lg-4" id="contact">
+                    <div class="px-3 pb-4 contant-section px-lg-4">
                         <h2 class="mb-3 h3 text">Contact</h2>
                         <div class="row">
                             <div class="col-md-7 d-print-none">
                                 <div class="my-2">
-                                    <form action="route('mail')" method="POST">
+                                    <form action="{{ Route('mail') }}" method="POST">
                                         @csrf
                                         <div class="row">
-                                            <div class="col-6">
-                                                <input class="form-control" type="text" id="name" name="name"
-                                                    placeholder="Your Name" required>
+                                            <div class="mb-2 col-6">
+                                                <input class="form-control" type="text" name="name" placeholder="Your Name">
                                             </div>
-                                            <div class="col-6">
-                                                <input class="form-control" type="email" id="email" name="_replyto"
-                                                    placeholder="Your E-mail" required>
+                                            @if ($errors->first('name'))
+                                                <div class="p-1 alert alert-danger">{{ $errors->first('name') }}</div>
+                                            @endif
+                                            <div class="mb-2 col-6">
+                                                <input class="form-control" type="email" name="email"
+                                                    placeholder="Your E-mail">
                                             </div>
+                                            @if ($errors->first('email'))
+                                                <div class="p-1 alert alert-danger">{{ $errors->first('email') }}</div>
+                                            @endif
                                         </div>
                                         <div class="my-2 form-group">
-                                            <textarea class="form-control" style="resize: none;" id="message" name="message"
-                                                rows="4" placeholder="Your Message" required></textarea>
+                                            <textarea class="form-control" style="resize: none;" name="message" rows="4"
+                                                placeholder="Your Message"></textarea>
                                         </div>
-                                        <button class="mt-2 btn btn-primary" type="submit">Send</button>
+                                        @if ($errors->first('message'))
+                                            <div class="p-1 alert alert-danger">{{ $errors->first('message') }}</div>
+                                        @endif
+                                        <button class="mt-2 btn btn-primary" type="submit" name="submit">Send</button>
                                     </form>
                                 </div>
                             </div>

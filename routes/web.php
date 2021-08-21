@@ -17,5 +17,6 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::view('/', 'index');
-Route::post('/', [sendMessageController::class, 'create'])->name('mail');
+Route::get('/', [sendMessageController::class, 'index'])->name('home');
+Route::post('store', [sendMessageController::class, 'store'])->name('mail');
+Route::get('check_message', [sendMessageController::class, 'check'])->name('messages');
