@@ -92,15 +92,22 @@
                                 <div class="mb-2"><span>CSS</span>
                                     <div class="my-1 progress">
                                         <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right"
-                                            data-aos-delay="200" data-aos-anchor=".skills-section" style="width: 85%"
+                                            data-aos-delay="200" data-aos-anchor=".skills-section" style="width: 40%"
                                             aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
                                 <div class="mb-2"><span>JavaScript</span>
                                     <div class="my-1 progress">
                                         <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right"
-                                            data-aos-delay="300" data-aos-anchor=".skills-section" style="width: 75%"
+                                            data-aos-delay="300" data-aos-anchor=".skills-section" style="width: 60%"
                                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="mb-2"><span>Tailwind</span>
+                                    <div class="my-1 progress">
+                                        <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right"
+                                            data-aos-delay="200" data-aos-anchor=".skills-section" style="width: 50%"
+                                            aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
                             </div>
@@ -108,21 +115,28 @@
                                 <div class="mb-2"><span>PHP</span>
                                     <div class="my-1 progress">
                                         <div class="progress-bar bg-success" role="progressbar" data-aos="zoom-in-right"
-                                            data-aos-delay="400" data-aos-anchor=".skills-section" style="width: 80%"
+                                            data-aos-delay="400" data-aos-anchor=".skills-section" style="width: 60%"
                                             aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
                                 <div class="mb-2"><span>Git</span>
                                     <div class="my-1 progress">
                                         <div class="progress-bar bg-success" role="progressbar" data-aos="zoom-in-right"
-                                            data-aos-delay="500" data-aos-anchor=".skills-section" style="width: 85%"
+                                            data-aos-delay="500" data-aos-anchor=".skills-section" style="width: 80%"
                                             aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="mb-2"><span>Laravel</span>
+                                    <div class="my-1 progress">
+                                        <div class="progress-bar bg-success" role="progressbar" data-aos="zoom-in-right"
+                                            data-aos-delay="600" data-aos-anchor=".skills-section" style="width: 50%"
+                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
                                 <div class="mb-2"><span>Database</span>
                                     <div class="my-1 progress">
                                         <div class="progress-bar bg-success" role="progressbar" data-aos="zoom-in-right"
-                                            data-aos-delay="600" data-aos-anchor=".skills-section" style="width: 75%"
+                                            data-aos-delay="600" data-aos-anchor=".skills-section" style="width: 85%"
                                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
@@ -141,6 +155,14 @@
                                     <div class="mb-1 h5">Backend Developer - Intern at HNGi8 x I4G</div>
                                     <div class="mb-2 text-muted text-small">August, 2021 - Present</div>
                                     <div>A Remote Internship Program</div>
+                                </div>
+                            </div>
+
+                            <div class="shadow-sm timeline-card timeline-card-primary card">
+                                <div class="card-body">
+                                    <div class="mb-1 h5">Backend Developer - Keyla Technologies</div>
+                                    <div class="mb-2 text-muted text-small">February, 2021 - July</div>
+                                    <div>Build RESTful API endpoints with Laravel framework</div>
                                 </div>
                             </div>
                         </div>
