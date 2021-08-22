@@ -157,7 +157,13 @@
                                     <div>A Remote Internship Program</div>
                                 </div>
                             </div>
-
+                            <div class="shadow-sm timeline-card timeline-card-primary card">
+                                <div class="card-body">
+                                    <div class="mb-1 h5">Tall Stack Developer - Naitrons Limited (UK)</div>
+                                    <div class="mb-2 text-muted text-small">July, 2021 - Present</div>
+                                    <div>Building Application with Laravel, Alpine Js, Livewire and Tailwind CSS</div>
+                                </div>
+                            </div>
                             <div class="shadow-sm timeline-card timeline-card-primary card">
                                 <div class="card-body">
                                     <div class="mb-1 h5">Backend Developer - Keyla Technologies</div>
